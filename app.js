@@ -37,7 +37,7 @@ app.post("/", function(req,res){                                       //app.pos
      url : "https://us20.api.mailchimp.com/3.0/lists/YOUR LIST ID HERE ",
      method: "POST",
      headers: {
-       "Authorization" : "sneh YOUR APIKEY HERE"
+       "Authorization" : "username YOUR APIKEY HERE"
      },
      body: jsonData             //data that your actualy posting come inside body
    };
