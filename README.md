@@ -31,7 +31,7 @@ npm init
 npm install body-parser express request
 ```
 
-## Working
+## Run
 
 cd to the master folder
 
