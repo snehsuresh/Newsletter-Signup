@@ -34,10 +34,17 @@ app.post("/", function(req,res){                                       //app.pos
   var jsonData = JSON.stringify(data);
 
    var options = {
+<<<<<<< HEAD
+     url : "https://us20.api.mailchimp.com/3.0/lists/YOUR LIST ID HERE ",
+     method: "POST",
+     headers: {
+       "Authorization" : "sneh YOUR APIKEY HERE"
+=======
   //   url : "https://us20.api.mailchimp.com/3.0/lists/1315d17038",
      method: "POST",
      headers: {
        "Authorization" : "sneh a87ca73d6b9151140f96c3187b7a1a17-us20"
+>>>>>>> 602c2b428dc06675685b7f8f6c47b02025c8c5c6
      },
      body: jsonData             //data that your actualy posting come inside body
    };
@@ -45,6 +52,11 @@ app.post("/", function(req,res){                                       //app.pos
 
    request(options, function(error, response, body){
      if(error){
+<<<<<<< HEAD
+       console.log(error)
+       console.log(res.statusCode)
+=======
+>>>>>>> 602c2b428dc06675685b7f8f6c47b02025c8c5c6
        res.sendFile(__dirname + "/failure.html");
      }else{
        if(res.statusCode === 200){
@@ -65,7 +77,3 @@ app.post("/failure", function(req,res){
 app.listen(3000, function() {
   console.log("server is set");
 });
-
-
-// a87ca73d6b9151140f96c3187b7a1a17-us20
-//1315d17038 listid
